@@ -37,25 +37,31 @@
           <input class="form-control" type="text" id="bill" name="bill">
         </div>
         <div class="select-tip">
-          <label class="form-label" for="tip">Select Tip %</label>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" value="5">
-          </div>
-          <div class="form-check">
-            <input  class="form-check-input"type="radio" value="10">
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" value="15">
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" value="25">
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" value="50">
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="text" value="" placeholder="Custom">
-          </div>
+          <fieldset>
+            <legend>Select Tip %</legend>
+            <div class="form-check-group">
+              <div class="form-check">
+                <input id="value5" class="form-check-input" type="radio" value="5">
+                <label for="value5" class="sr-only">5%</label>
+              </div>
+              <div class="form-check">
+                <input id="value10" class="form-check-input"type="radio" value="10">
+                <label for="value10" class="sr-only">10%</label>
+              </div>
+              <div class="form-check">
+                <input id="value15" class="form-check-input" type="radio" value="15">
+                <label for="value15" class="sr-only">15%</label>
+              </div>
+              <div class="form-check">
+                <input id="value25" class="form-check-input" type="radio" value="25">
+                <label for="value25" class="sr-only">25%</label>
+              </div>
+              <div class="form-check">
+                <input id="custom" class="form-check-input" type="text" value="" placeholder="Custom">
+                <label for="custom">Custom</label>
+              </div>
+            </div>
+          </fieldset>
         </div>
         <div class="people-count">
           <label for="peopleCount">Number of People</label>
@@ -64,34 +70,19 @@
       </div>
       <div class="col">
         <div class="totals">
-          <div class="tip-amount"></div>
-          <div class="total"></div>
+          <div class="tip-amount">
+            <div class="totals__label">Tip Amount</div>
+            <div class="totals__value">$0.00</div>
+          </div>
+          <div class="total">
+            <div class="totals__label">Total</div>
+            <div class="totals__value">$0.00</div>
+            <button>Reset</button>
+          </div>
         </div>
       </div>
-
     </section>
   </main>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

@@ -26,27 +26,27 @@ function jsTask() {
 
 //Browsersync
 function browserSyncServe(cb) {
-    browsersync.init({
-        server: {
-            baseDir: '.',
-        },
-        notify: {
-            styles: {
-                top: 'auto',
-                bottom: '0',
-            },
-        },
-    });
-    cb();
+	browsersync.init({
+		server: {
+			baseDir: '.',
+		},
+		notify: {
+			styles: {
+				top: 'auto',
+				bottom: '0',
+			},
+		},
+	});
+	cb();
 }
 function browserSyncReload(cb) {
-    browsersync.reload;
-    cb();
+	browsersync.reload();
+	cb();
 }
 
 //Watch Task
 function watchTask() {
-    watch('*html', browserSyncReload);
+    watch('*.html', browserSyncReload);
     watch(
         ['src/scss/**/*.scss', 'src/**/*.js'],
         series(scssTask, jsTask, browserSyncReload)
