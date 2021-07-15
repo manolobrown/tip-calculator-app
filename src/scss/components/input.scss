@@ -1,0 +1,19 @@
+@use '../util/' as *;
+
+.form-label {
+    color: var(--dark-grayish-cyan);
+    line-height: rem(24);
+    font-weight: 700;
+    margin-bottom: rem(6);
+    display: inline-block;
+}
+.form-control {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 5px;
+    height: rem(48);
+    background-color: var(--light-grayish-cyan3);
+    border: 0;
+}

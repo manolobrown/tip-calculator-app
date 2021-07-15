@@ -1,0 +1,16 @@
+@use '../util/' as *;
+
+.d-flex {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+.col+.col {
+    margin-top: rem(47)
+}

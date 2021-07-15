@@ -30,7 +30,7 @@
         <img src="./images/logo.svg" alt="">
       </div>
     </header>
-    <section class="container">
+    <section class="container splitter d-flex">
       <div class="col">
         <div class="bill">
           <label class="form-label" for="bill">Bill</label>
@@ -38,34 +38,38 @@
         </div>
         <div class="select-tip">
           <fieldset>
-            <legend>Select Tip %</legend>
+            <legend class="form-label">Select Tip %</legend>
             <div class="form-check-group">
               <div class="form-check">
                 <input id="value5" class="form-check-input" type="radio" value="5">
-                <label for="value5" class="sr-only">5%</label>
+                <label for="value5" class="form-check-label">5%</label>
               </div>
               <div class="form-check">
                 <input id="value10" class="form-check-input"type="radio" value="10">
-                <label for="value10" class="sr-only">10%</label>
+                <label for="value10" class="form-check-label">10%</label>
               </div>
               <div class="form-check">
                 <input id="value15" class="form-check-input" type="radio" value="15">
-                <label for="value15" class="sr-only">15%</label>
+                <label for="value15" class="form-check-label">15%</label>
               </div>
               <div class="form-check">
                 <input id="value25" class="form-check-input" type="radio" value="25">
-                <label for="value25" class="sr-only">25%</label>
+                <label for="value25" class="form-check-label">25%</label>
               </div>
               <div class="form-check">
-                <input id="custom" class="form-check-input" type="text" value="" placeholder="Custom">
-                <label for="custom">Custom</label>
+                <input id="value50" class="form-check-input" type="radio" value="50">
+                <label for="value50" class="form-check-label">50%</label>
+              </div>
+              <div class="form-check">
+                <input id="custom" class="form-check-input form-control" type="text" value="" placeholder="Custom">
+                <label class="sr-only" for="custom">Custom</label>
               </div>
             </div>
           </fieldset>
         </div>
         <div class="people-count">
-          <label for="peopleCount">Number of People</label>
-          <input type="text" id="peopleCount">
+          <label class="form-label" for="peopleCount">Number of People</label>
+          <input class="form-control" type="text" id="peopleCount">
         </div>
       </div>
       <div class="col">
