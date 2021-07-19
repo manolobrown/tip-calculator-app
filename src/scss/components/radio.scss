@@ -1,9 +1,9 @@
 @use '../util/' as *;
 .form-check-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 rem(-7.5);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: rem(16);
+    row-gap: rem(16);
 }
 .form-check {
     display: flex;
@@ -11,14 +11,14 @@
     align-items: center;
     justify-content: center;
     height: rem(48);
-    flex: 0 0 50%;
-    max-width: 50%;
     width: 100%;
-    padding: 0 rem(7.5);
-
-    input[type=radio] {
-        position: absolute;
-        left: -10000px;
+}
+.form-check-input {
+    padding: 0 rem(20);
+    margin-bottom: 0 !important;
+    &,&::placeholder {
+        color: var(--dark-grayish-cyan3);
+        text-align: right;
     }
 }
 .form-check-label {
@@ -30,4 +30,5 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+    color: var(--white);
 }
