@@ -1,0 +1,7 @@
+@use '../util/' as *;
+
+.bill .form-control {
+    background-image: url('/images/icon-dollar.svg');
+    background-size: rem(11) rem(17);
+    padding-left: rem(40);
+}

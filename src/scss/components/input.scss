@@ -6,6 +6,10 @@
     font-weight: 700;
     margin-bottom: rem(6);
     display: inline-block;
+
+    .error {
+        color: var(--error);
+    }
 }
 .form-control {
     display: flex;
@@ -16,4 +20,23 @@
     height: rem(48);
     background-color: var(--light-grayish-cyan3);
     border: 0;
+    text-align: right;
+    padding: 0 rem(20);
+    background-position: rem(20);
+    background-repeat: no-repeat;
+    color: var(--dark-cyan);
+    caret-color: var(--strong-cyan);
+    transition: outline .2s ease;
+
+    &::placeholder {
+        color: #9EBBBD;
+    }
+
+    &:focus-visible, &:focus {
+        outline: var(--strong-cyan) auto 2px;
+    }
+
+    &.error {
+        outline: var(--error) auto 2px;
+    }
 }

@@ -1,0 +1,25 @@
+@use '../util/' as *;
+
+.people-count .form-control {
+    background-image: url('/images/icon-person.svg');
+    background-size: rem(13) rem(16);
+    padding-left: rem(35);
+}
+
+.people-count {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .form-control {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .form-label {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+}

@@ -34,7 +34,7 @@
       <div class="col">
         <div class="bill">
           <label class="form-label" for="bill">Bill</label>
-          <input class="form-control" type="text" id="bill" name="bill">
+          <input class="form-control" type="text" id="bill" name="bill" placeholder="0">
         </div>
         <div class="select-tip">
           <fieldset>
@@ -69,20 +69,22 @@
         </div>
         <div class="people-count">
           <label class="form-label" for="peopleCount">Number of People</label>
-          <input class="form-control" type="text" id="peopleCount">
+          <span class="error">Can't be zero</span>
+          <input class="form-control" type="text" id="peopleCount" placeholder="0">
         </div>
       </div>
       <div class="col">
         <div class="totals">
-          <div class="tip-amount">
+          <div class="tip-amount d-flex">
             <div class="totals__label">Tip Amount</div>
             <div class="totals__value">$0.00</div>
           </div>
-          <div class="total">
+          <div class="total d-flex">
             <div class="totals__label">Total</div>
             <div class="totals__value">$0.00</div>
-            <button>Reset</button>
+          
           </div>
+          <button>Reset</button>
         </div>
       </div>
     </section>

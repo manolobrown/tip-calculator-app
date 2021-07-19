@@ -25,3 +25,12 @@ body {
     white-space: nowrap!important;
     border: 0!important;
 }
+
+.error {
+    color: var(--error);
+    font-weight: 700;
+}
+
+input[type=text], button, .form-check-label {
+    cursor: pointer;
+}

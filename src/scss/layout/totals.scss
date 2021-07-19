@@ -1,0 +1,56 @@
+@use '../util/' as *;
+
+.totals {
+    padding: rem(20);
+    background-color: var(--dark-cyan);
+    border-radius: rem(15);
+    font-weight: 700;
+
+    &__label:after {
+        content:'/ person';
+        display: block;
+        font-size: rem(13);
+        color: #7F9D9F;
+
+    }
+
+    &__value {
+        font-size: rem(32);
+        color: var(--strong-cyan);
+    }
+}
+
+.tip-amount, .total {
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    margin-bottom: rem(35);
+}
+
+.totals button {
+    width: 100%;
+    color: #00474B;
+    font-size: rem(20);
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: rem(48);
+    border: 0;
+    border-radius: rem(5);
+    background-color: #0D686D;
+    transition: background-color .2s ease;
+
+    &:hover {
+        background-color: #9FE8DF;
+    }
+
+    &:hover, &.active {
+        color: var(--dark-cyan);
+    }
+
+    &.active {
+        background-color: var(--strong-cyan);
+    }
+}

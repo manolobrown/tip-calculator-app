@@ -31,4 +31,10 @@
     align-items: center;
     justify-content: center;
     color: var(--white);
+    transition: background-color .2s ease;
+}
+
+.form-check-input:checked ~ .form-check-label, .form-check-label:hover {
+    background-color: var(--strong-cyan);
+    color: var(--dark-cyan);
 }
