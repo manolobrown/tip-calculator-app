@@ -38,3 +38,18 @@
     background-color: var(--strong-cyan);
     color: var(--dark-cyan);
 }
+
+@include breakpoint(medium) {
+    .form-check-group {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@include breakpoint(large) {
+    .form-check-input {
+        padding: 0 rem(16);
+        &::placeholder {
+            text-align: center;
+        }
+    }
+}

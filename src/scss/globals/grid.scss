@@ -5,8 +5,27 @@
     flex-wrap:wrap;
 }
 
+.d-flex-row {
+    margin-right: - rem(24);
+    margin-left: - rem(24);
+}
+
 .col {
     flex: 0 0 100%;
     max-width: 100%;
     width: 100%;
+    padding: 0 rem(24);
+}
+
+.container {
+    max-width: 57.5em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@include breakpoint(large) {
+    .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }

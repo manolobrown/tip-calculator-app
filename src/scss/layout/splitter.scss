@@ -2,12 +2,20 @@
 
 .splitter {
     background-color: var(--white);
-    border-radius: 25px 25px 0 0;
+    border-radius: rem(25) rem(25) 0 0;
     padding: rem(32);
     margin-bottom: rem(32);
 
 
     .form-control, .select-tip {
         margin-bottom: rem(32);
+    }
+
+    @include breakpoint(large) {
+        border-radius: rem(25);
+    
+        .form-control, .select-tip {
+            margin-bottom: rem(45);
+        }
     }
 }

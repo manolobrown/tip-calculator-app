@@ -1,7 +1,7 @@
 @use '../util/' as *;
 
 .totals {
-    padding: rem(20);
+    padding: rem(45) rem(24) rem(24);
     background-color: var(--dark-cyan);
     border-radius: rem(15);
     font-weight: 700;
@@ -52,5 +52,24 @@
 
     &.active {
         background-color: var(--strong-cyan);
+    }
+}
+
+@include breakpoint(medium) {
+    .totals {
+        padding: rem(62) rem(40) rem(40);
+    }
+}
+
+@include breakpoint(large) {
+    .totals {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        button {
+            margin-top: auto;
+        }
     }
 }
