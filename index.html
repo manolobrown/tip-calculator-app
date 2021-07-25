@@ -42,23 +42,23 @@
               <legend class="form-label">Select Tip %</legend>
               <div class="form-check-group">
                 <div class="form-check">
-                  <input id="value5" class="form-check-input visually-hidden" type="radio" value="5" name="tip">
+                  <input id="value5" class="form-check-input visually-hidden" type="radio" value=".05" name="tip">
                   <label for="value5" class="form-check-label">5%</label>
                 </div>
                 <div class="form-check">
-                  <input id="value10" class="form-check-input visually-hidden" type="radio" value="10" name="tip">
+                  <input id="value10" class="form-check-input visually-hidden" type="radio" value=".10" name="tip">
                   <label for="value10" class="form-check-label">10%</label>
                 </div>
                 <div class="form-check">
-                  <input id="value15" class="form-check-input visually-hidden" type="radio" value="15" name="tip">
+                  <input id="value15" class="form-check-input visually-hidden" type="radio" value=".15" name="tip">
                   <label for="value15" class="form-check-label">15%</label>
                 </div>
                 <div class="form-check">
-                  <input id="value25" class="form-check-input visually-hidden" type="radio" value="25" name="tip">
+                  <input id="value25" class="form-check-input visually-hidden" type="radio" value=".25" name="tip">
                   <label for="value25" class="form-check-label">25%</label>
                 </div>
                 <div class="form-check">
-                  <input id="value50" class="form-check-input visually-hidden" type="radio" value="50" name="tip">
+                  <input id="value50" class="form-check-input visually-hidden" type="radio" value=".50" name="tip">
                   <label for="value50" class="form-check-label">50%</label>
                 </div>
                 <div class="form-check">
@@ -71,21 +71,21 @@
           <div class="people-count">
             <label class="form-label" for="peopleCount">Number of People</label>
             <span class="error">Can't be zero</span>
-            <input class="form-control" type="text" id="peopleCount" placeholder="0">
+            <input class="form-control" type="text" id="peopleCount" placeholder="0" value="">
           </div>
         </div>
         <div class="col">
           <div class="totals">
             <div class="tip-amount d-flex">
               <div class="totals__label">Tip Amount</div>
-              <div class="totals__value">$0.00</div>
+              <div id="tipAmount" class="totals__value">$0.00</div>
             </div>
             <div class="total d-flex">
               <div class="totals__label">Total</div>
-              <div class="totals__value">$0.00</div>
+              <div id="total" class="totals__value">$0.00</div>
             
             </div>
-            <button>Reset</button>
+            <button id="reset">Reset</button>
           </div>
         </div>
       </div>

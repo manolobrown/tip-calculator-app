@@ -31,8 +31,10 @@
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-terser": "^2.0.1",
+    "imask": "^6.1.0",
     "postcss": "^8.3.5",
     "sass": "^1.35.2",
-    "utf-8-validate": "^5.0.5"
+    "utf-8-validate": "^5.0.5",
+    "webpack-stream": "^6.1.2"
   }
 }
