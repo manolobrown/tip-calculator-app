@@ -152,8 +152,6 @@ function calculate() {
     if ( billValue && tipSelectValue && numOfPeopleValue > 0 ) {
         let tip = ((billValue * tipSelectValue) / numOfPeopleValue).toFixed(2);
         let total = ( (parseFloat(billValue) + parseFloat(tip) ) / numOfPeopleValue).toFixed(2);
-        console.log(billValue);
-        console.log(total);
         tipAmount.innerHTML = `$${tip}`;
         totalAmount.innerHTML = `$${total}`;
     }
