@@ -18,12 +18,12 @@
   },
   "homepage": "https://github.com/manolobrown/tip-calculator-app#readme",
   "dependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/preset-env": "^7.14.7",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
     "autoprefixer": "^10.3.1",
-    "browser-sync": "^2.27.4",
+    "browser-sync": "^2.27.5",
     "bufferutil": "^4.0.3",
-    "cssnano": "^5.0.6",
+    "cssnano": "^5.0.7",
     "dart-sass": "^1.25.0",
     "fsevents": "^2.3.2",
     "gulp": "^4.0.2",
@@ -32,8 +32,8 @@
     "gulp-sass": "^5.0.0",
     "gulp-terser": "^2.0.1",
     "imask": "^6.1.0",
-    "postcss": "^8.3.5",
-    "sass": "^1.35.2",
+    "postcss": "^8.3.6",
+    "sass": "^1.36.0",
     "utf-8-validate": "^5.0.5",
     "webpack-stream": "^6.1.2"
   }
