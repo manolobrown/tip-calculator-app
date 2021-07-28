@@ -37,7 +37,7 @@
         <div class="col">
           <div class="bill">
             <label class="form-label" for="bill">Bill</label>
-            <input class="form-control" type="text" id="bill" name="bill" placeholder="0">
+            <input class="form-control" type="text" inputmode="numeric" pattern="[0-9]*" id="bill" name="bill" placeholder="0">
           </div>
           <div class="select-tip">
             <fieldset>
@@ -73,7 +73,7 @@
           <div class="people-count">
             <label class="form-label" for="peopleCount">Number of People</label>
             <span class="error" style="display: none;">Can't be zero</span>
-            <input class="form-control" type="text" id="peopleCount" placeholder="0" value="">
+            <input class="form-control" type="text" inputmode="numeric" pattern="[0-9]*" id="peopleCount" placeholder="0" value="">
           </div>
         </div>
         <div class="col">
