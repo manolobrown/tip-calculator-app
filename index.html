@@ -37,7 +37,7 @@
         <div class="col">
           <div class="bill">
             <label class="form-label" for="bill">Bill</label>
-            <input class="form-control" type="text" inputmode="numeric" pattern="[0-9]*" id="bill" name="bill" placeholder="0">
+            <input class="form-control" type="text" inputmode="numeric" id="bill" name="bill" placeholder="0">
           </div>
           <div class="select-tip">
             <fieldset>
@@ -64,7 +64,7 @@
                   <label for="value50" class="form-check-label">50%</label>
                 </div>
                 <div class="form-check">
-                  <input id="custom" class="form-check-input form-control" type="text" value="" placeholder="Custom" name="tipCustom">
+                  <input id="custom" class="form-check-input form-control" type="text" inputmode="numeric" value="" placeholder="Custom" name="tipCustom">
                   <label class="visually-hidden" for="custom">Custom</label>
                 </div>
               </div>
@@ -73,7 +73,7 @@
           <div class="people-count">
             <label class="form-label" for="peopleCount">Number of People</label>
             <span class="error" style="display: none;">Can't be zero</span>
-            <input class="form-control" type="text" inputmode="numeric" pattern="[0-9]*" id="peopleCount" placeholder="0" value="">
+            <input class="form-control" type="text" inputmode="numeric" id="peopleCount" placeholder="0" value="">
           </div>
         </div>
         <div class="col">
