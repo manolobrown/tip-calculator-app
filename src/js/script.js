@@ -3,7 +3,7 @@ import IMask from "imask";
 
 const billInput = document.querySelector('#bill');
 const tipSelect = document.querySelectorAll('.form-check-input[type=radio]');
-const tipSelectCustom = document.querySelector('.form-check-input[type=text]');
+const tipSelectCustom = document.querySelector('.form-check-input[type=text], .form-check-input[type=number]');
 const numOfPeople = document.querySelector('#peopleCount');
 const tipAmount = document.querySelector('#tipAmount');
 const totalAmount = document.querySelector('#total');
