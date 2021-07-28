@@ -23,7 +23,7 @@ function jsTask() {
         .pipe(babel({ presets: ['@babel/preset-env'] }))
         //.pipe(terser())
 		.pipe(webpack({
-			mode: 'development',
+			mode: 'production',
 			output: {
 				filename: 'script.js',
 			  },
@@ -62,3 +62,4 @@ function watchTask() {
 
 //Default Gulp Task
 exports.default = series(scssTask, jsTask, browserSyncServe, browserSyncReload, watchTask);
+exports.build = series(scssTask, jsTask);
